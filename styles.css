@@ -1,0 +1,256 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    cursor: url('./images/cursor-default.png') 8 8, default;
+    transition: background-color 0.5s ease; 
+}
+
+.Header{
+    width: 100%;
+    height: 35%;
+    -webkit-text-stroke:2px black;
+    flex:1;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    justify-content: center;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Darumadrop One';
+}
+
+.Header-Img{
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.Body{
+    height: 65%;
+    flex:1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.Usagi-gif{
+    margin-top: 30px;
+    height: 75%;
+    width: 20%;
+}
+
+.Start-Button{
+    width: 30%;
+    height: 10%;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Darumadrop One';
+    background-color: #ec8daf;
+    border-radius: 30px;
+    border-color: #2f1c23;
+}
+
+.Start-Button:hover {
+    opacity: 0.7;
+    background-color: #f8d8e3;
+    cursor: url('./images/cursor-pointer.png') 8 8, auto;
+}
+
+.Start-Button:active {
+    cursor: url('./images/cursor-grab.png') 8 8, auto;
+}
+
+.ms span {
+    text-decoration: underline 3px black;
+    /* text-underline-offset: 0px; */
+    animation: meteor-shower-anim linear 1600ms infinite forwards
+  }
+       
+  .ms span:nth-of-type(1) {animation-delay: 0ms}
+  .ms span:nth-of-type(2) {animation-delay: 50ms}
+  .ms span:nth-of-type(3) {animation-delay: 100ms}
+  .ms span:nth-of-type(4) {animation-delay: 150ms}
+  .ms span:nth-of-type(5) {animation-delay: 200ms}
+  .ms span:nth-of-type(6) {animation-delay: 250ms}
+  .ms span:nth-of-type(7) {animation-delay: 300ms}
+  .ms span:nth-of-type(8) {animation-delay: 350ms}
+  .ms span:nth-of-type(9) {animation-delay: 400ms}
+  .ms span:nth-of-type(10) {animation-delay: 450ms}
+  .ms span:nth-of-type(11) {animation-delay: 500ms}
+  .ms span:nth-of-type(12) {animation-delay: 550ms}
+  .ms span:nth-of-type(13) {animation-delay: 600ms}
+  .ms span:nth-of-type(14) {animation-delay: 650ms}
+  .ms span:nth-of-type(15) {animation-delay: 700ms}
+  .ms span:nth-of-type(16) {animation-delay: 750ms}
+  .ms span:nth-of-type(17) {animation-delay: 800ms}
+  .ms span:nth-of-type(18) {animation-delay: 850ms}
+  .ms span:nth-of-type(19) {animation-delay: 900ms}
+  .ms span:nth-of-type(20) {animation-delay: 950ms}
+  .ms span:nth-of-type(21) {animation-delay: 1000ms}
+  .ms span:nth-of-type(22) {animation-delay: 1050ms}
+  .ms span:nth-of-type(23) {animation-delay: 1100ms}
+  .ms span:nth-of-type(24) {animation-delay: 1150ms}
+  .ms span:nth-of-type(25) {animation-delay: 1200ms}
+  .ms span:nth-of-type(26) {animation-delay: 1250ms}
+  .ms span:nth-of-type(27) {animation-delay: 1300ms}
+  .ms span:nth-of-type(28) {animation-delay: 1350ms}
+  .ms span:nth-of-type(29) {animation-delay: 1400ms}
+  .ms span:nth-of-type(30) {animation-delay: 1450ms}
+  .ms span:nth-of-type(31) {animation-delay: 1500ms}
+  .ms span:nth-of-type(32) {animation-delay: 1550ms}
+  .ms span:nth-of-type(33) {animation-delay: 1600ms}
+       
+  @keyframes meteor-shower-anim {
+    0% { text-decoration-color: DarkOrange }
+    10% { text-decoration-color: LightYellow }
+    70% { text-decoration-color: black }
+  }
+
+
+/* .arrow-left-image{
+    width: 1%;
+    height: 10%;
+} */
+
+ .Arrow-Contaier{
+    display: none;
+    width: 80%;
+    height: 50%;
+    flex-direction: row;
+    /* flex:1; */
+    /* flex-wrap: wrap; */
+    /* align-content:space-around; */
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+ }
+
+  .arrow-left-button{
+    width: 150px;
+    height: 50px;
+      background-color: #00000000;
+      border-color: #00000000;
+  }
+
+  .arrow-left-button:hover{
+      opacity: 0.7;
+      cursor: url('./images/cursor-pointer.png') 8 8, auto;
+  }
+  .arrow-left-button:active{
+    opacity: 0.7;
+    cursor: url('./images/cursor-grab.png') 8 8, auto;
+}
+
+.arrow-right-button{
+    width: 150px;
+    height: 50px;
+    background-color: #00000000;
+    border-color: #00000000;
+}
+.arrow-right-button:hover{
+    opacity: 0.7;
+    cursor: url('./images/cursor-pointer.png') 8 8, auto;
+}
+
+.arrow-right-button:active{
+    opacity: 0.7;
+    cursor: url('./images/cursor-grab.png') 8 8, auto;
+}
+
+  .arrow-left-image{
+    max-width:100%;
+  }
+
+  .arrow-right-image{
+    max-width:100%;
+  }
+
+  .Loading{
+    display:none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    height: 50%;
+    text-align: center;
+  }
+  .cake-image{
+    max-width:10%;
+    transition: 0.5s;
+  }
+  .cake-button{
+    transition: 0.5s;
+  }
+
+  .cake-button:hover{
+    cursor: url('./images/cursor-pointer.png') 64 64, pointer;
+  }
+
+  .cake-button:active {
+    cursor: url('./images/cursor-grab.png') 64 64, pointer;
+  }
+
+  .Result-Dialog{
+      position: absolute;
+      width: 30%;
+      height: 80%;
+      align-items: center;
+      justify-items: center;
+      overflow-y: hidden;
+  }
+
+  .Dialog-form{
+    max-width: 100%;
+    height:auto;
+  }
+
+  .Again{
+      display: none;
+      width: 20%;
+      height: auto;
+  }
+
+  .Confirm-button{
+    width: 30%;
+    height: 10%;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Darumadrop One';
+    background-color: #ec8daf;
+    border-radius: 30px;
+    border-color: #2f1c23;
+  }
+  .Confirm-button:hover{
+    cursor: url('./images/cursor-pointer.png') 8 8,auto;
+  }
+  .Confirm-button:active{
+    cursor: url('./images/cursor-grab.png') 8 8,auto;
+  }
+
+  #confetti {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+  }
+
+  .Kiss-cnt{
+    display: none;
+  }
