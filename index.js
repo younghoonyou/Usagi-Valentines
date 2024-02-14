@@ -12,6 +12,7 @@ const Gifticon = document.querySelector('.Gift');
 const Again = document.querySelector('.Again');
 const ConfirmButton = document.querySelector('.Confirm-button');
 const kisscnt = document.querySelector('.Kiss-cnt');
+const UsagiAudio = document.querySelector('.Usagi-audio');
 let clicked = true;
 let active = parseInt(items.length / 2);
 let KISS_CNT = 0;
@@ -81,7 +82,9 @@ const handleButton = () => {
 }
 
 const PickGift = () => {
-    Loading.style.display = 'block';
+            Loading.style.display = 'block';
+            UsagiAudio.currentTime = 9;
+            UsagiAudio.play();
             let imageIndex = 0;
             let intervalTime = 100;
             let backgroundOpacity = 0.01; 
@@ -98,6 +101,7 @@ const PickGift = () => {
                 if(items[active] === GiftRef){
                     Gifticon.src = './images/startbucks.png';
                 }
+                UsagiAudio.pause();
                 openDialog();
                 clearInterval(interval);
             },3000)
